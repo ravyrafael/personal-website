@@ -10,8 +10,8 @@ const index = () => {
             <h1 className="responsive-headline">Hi there! I'm Ravy Rafael.</h1>
             <h3>I'm a <span>C#</span> developer and <span>Javascript</span> lover. 
             I have knowledge in <span>Node</span> and several studies carried out in <span>React,</span> <span>React Native</span> and <span>Redux</span>.  
-            If you are interested in meeting me lets <a className="smoothscroll" href="#about">start scrolling </a>
-              and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
+            If you are interested in meeting me lets <a className="smoothscroll" href="#resume">start scrolling </a>
+              and learn more about me.</h3>
             <hr />
             <ul className="social">
               <li><a target="_blank" href="https://www.linkedin.com/in/ravyrafael/"><i className="fa fa-linkedin" /></a></li>
