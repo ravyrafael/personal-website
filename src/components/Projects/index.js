@@ -23,11 +23,11 @@ const Projects = () => {
         </div>
         {/* portfolio-wrapper */}
         <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-          {projects.map(item =>(
+          {projects.map((item, index) =>(
                     <div className="columns portfolio-item">
                       <div className="item-wrap">
                         <a href={item.url} title>
-                          <img alt="" src="images/portfolio/coffee - Copia.jpg" />
+                          <img alt="" src={"images/portfolio/"+index+".jpg"} />
                           <div className="overlay">
                             <div className="portfolio-item-meta">
                               <h4>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h4>
