@@ -33,8 +33,8 @@ const index = () => {
                   <a target="_blank"href="RavyRafael.json"className="button"><i className="fa fa-download" />Json Resume</a>
                 </p>
               </div>
-            </div> {/* end row */}
-          </div> {/* end .main-col */}
+            </div> 
+          </div>
         </div>
       </section> 
     )
