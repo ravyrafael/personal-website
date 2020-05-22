@@ -39,9 +39,14 @@ header {
    text-align: center;
    overflow: hidden;
 }
+.footer {
+   position: absolute;
+   bottom: 0;
+}
+
 #experiences {
    background: linear-gradient(45deg, #70929c, #c5cdce);
-   color: black;
+   color: #000000a1;
 }
 
 /* vertically center banner section */
@@ -329,41 +334,112 @@ ul#nav li.current a { color: #ff7e22; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.Csharp {
+  	width: 95%;
+  	-moz-animation: Csharp 2s ease;
+  	-webkit-animation: Csharp 2s ease;
 }
 
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+@-moz-keyframes Csharp {
+   0%   { width: 0px;  }
+   100% { width: 95%;  }
+ }
+ @-webkit-keyframes Csharp {
+   0%   { width: 0px;  }
+   100% { width: 95%;  }
+ }
+
+.Net {
+  	width: 70%;
+  	-moz-animation: Net 2s ease;
+  	-webkit-animation: Net 2s ease;
 }
+
+@-moz-keyframes Net {
+   0%   { width: 0px;  }
+   100% { width: 95%;  }
+ }
+ @-webkit-keyframes Net {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+
+.javascript {
+  	width: 95%;
+  	-moz-animation: javascript 2s ease;
+  	-webkit-animation: javascript 2s ease;
+}
+
+@-moz-keyframes javascript {
+   0%   { width: 0px;  }
+   100% { width: 95%;  }
+ }
+ @-webkit-keyframes javascript {
+   0%   { width: 0px;  }
+   100% { width: 95%;  }
+ }
+
+.node {
+  	width: 50%;
+  	-moz-animation: node 2s ease;
+  	-webkit-animation: node 2s ease;
+}
+
+@-moz-keyframes node {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @-webkit-keyframes node {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+
+.react {
+   width: 70%;
+   -moz-animation: react 2s ease;
+   -webkit-animation: react 2s ease;
+}
+
+@-moz-keyframes react {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+ @-webkit-keyframes react {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+
+.react-native {
+   width: 80%;
+   -moz-animation: react-native 2s ease;
+   -webkit-animation: react-native 2s ease;
+}
+
+@-moz-keyframes react-native {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @-webkit-keyframes react-native {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+
+.redux {
+   width: 40%;
+   -moz-animation: redux 2s ease;
+   -webkit-animation: redux 2s ease;
+}
+
+@-moz-keyframes redux {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+ @-webkit-keyframes redux {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+
+
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
   100% { width: 55%;  }
@@ -385,10 +461,6 @@ ul#nav li.current a { color: #ff7e22; }
   100% { width: 50%;  }
 }
 
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
 @-webkit-keyframes illustrator {
   0%   { width: 0px;  }
   100% { width: 55%;  }

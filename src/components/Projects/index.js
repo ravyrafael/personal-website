@@ -10,7 +10,8 @@ const Projects = () => {
 
   useEffect(()=>{
     api.get("users/ravyrafael/repos").then(response =>{
-      let data = response.data.map((x) => ({url : x.svn_url, name: x.name, description: x.description, date:new Date(x.pushed_at) })).sort((x, y)=>x.date > y ? 1 : -1).filter((x,y)=> y<4)
+      let data = response.data.map((x) => ({url : x.svn_url, name: x.name, description: x.description, date:new Date(x.pushed_at) }))
+      .sort((x, y)=>x.date.getTime() < y.date.getTime() ? 1 : -1).filter((x,y)=> y<4)
       console.log(data)
 
       setProjects(data)
@@ -18,30 +19,32 @@ const Projects = () => {
     console.log(projects)
   },[])
   return (
-        <section id="resume">
-        {/* Education
-      ----------------------------------------------- */}
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1><span>Projects</span></h1>
-          </div>
-          <div className="nine columns main-col">
-            {projects.map((item)=>(
-            <div className="row item">
-              <div className="twelve columns">
-                
-            <h3>{item.name}</h3>
-            <p className="info">Pushed at<span>•</span> <em className="date">{item.date.toDateString()}</em></p>
-                <p>
-                  {item.description}
-                </p>
-              </div>
-            </div>
-            ))
-            }
-          </div> {/* main-col end */}
-        </div> {/* End Education */}
-      </section>
+    <section id="portfolio">
+    <div className="row">
+      <div className="twelve columns collapsed">
+        <h1>Last Projects.</h1>
+        {/* portfolio-wrapper */}
+        <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+          {projects.map(item =>(
+                    <div className="columns portfolio-item">
+                      <div className="item-wrap">
+                        <a href={item.url} title>
+                          <img alt="" src="images/portfolio/into-the-light.jpg" />
+                          <div className="overlay">
+                            <div className="portfolio-item-meta">
+                              <h4>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h4>
+                              <p>{item.description}</p>
+                              <p></p>
+                              <p className="footer">Published At {item.date.toDateString()}</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+          ))}
+        </div> {/* portfolio-wrapper end */}
+      </div> {/* twelve columns end */}
+    </div></section>
     )
 }
 

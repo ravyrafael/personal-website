@@ -7,17 +7,18 @@ import Resume from './components/Resume';
 import Timeline from './components/Timeline';
 import Projects from './components/Projects';
 
-
 const App = () => {
   
 
   return (
     <div>
       <Header> </Header>
-      <About></About>
+      
       <Resume></Resume>
       <Timeline></Timeline>
       <Projects></Projects>
+      <About></About>
+      
     </div>
  
   );

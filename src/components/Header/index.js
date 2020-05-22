@@ -7,18 +7,15 @@ const index = () => {
         <Menu></Menu>
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm Ravy Rafael.</h1>
-            <h3>I'm a <span>Javascript</span> and <span>C#</span> developer, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-              effective visual identities for companies of all sizes around the globe. Let's <a className="smoothscroll" href="#about">start scrolling</a>
+            <h1 className="responsive-headline">Hi there! I'm Ravy Rafael.</h1>
+            <h3>I'm a <span>C#</span> developer and <span>Javascript</span> lover. 
+            I have knowledge in <span>Node</span> and several studies carried out in <span>React,</span> <span>React Native</span> and <span>Redux</span>.  
+            If you are interested in meeting me lets <a className="smoothscroll" href="#about">start scrolling </a>
               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul className="social">
-              <li><a href="#"><i className="fa fa-facebook" /></a></li>
-              <li><a href="#"><i className="fa fa-twitter" /></a></li>
-              <li><a href="#"><i className="fa fa-google-plus" /></a></li>
               <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-              <li><a href="#"><i className="fa fa-instagram" /></a></li>
-              <li><a href="#"><i className="fa fa-dribbble" /></a></li>
+              <li><a href="#"><i className="fa fa-github" /></a></li>
               <li><a href="#"><i className="fa fa-skype" /></a></li>
             </ul>
           </div>
