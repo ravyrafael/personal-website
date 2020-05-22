@@ -41,12 +41,29 @@ header {
 }
 .footer {
    position: absolute;
-   bottom: 0;
+   bottom: 5px;
 }
 
 #experiences {
    background: linear-gradient(45deg, #c5cdce,#70929c);
    color: #000000a1;
+}
+.yellow{
+   color:yellow
+}
+
+
+.projects-title{
+   margin-bottom: 40px;
+}
+
+#portfolio{
+   text-align: center;
+}
+
+.portfolio-item-meta > h4{
+   overflow: hidden;
+   color: #FFFFFF;
 }
 
 /* vertically center banner section */

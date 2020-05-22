@@ -14,9 +14,9 @@ const index = () => {
               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul className="social">
-              <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-              <li><a href="#"><i className="fa fa-github" /></a></li>
-              <li><a href="#"><i className="fa fa-skype" /></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/ravyrafael/"><i className="fa fa-linkedin" /></a></li>
+              <li><a target="_blank" href="https://www.github.com/ravyrafael/"><i className="fa fa-github" /></a></li>
+              <li><a target="_blank" href="skype:RavyRafael"><i className="fa fa-skype" /></a></li>
             </ul>
           </div>
         </div>

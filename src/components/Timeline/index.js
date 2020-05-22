@@ -27,7 +27,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Web Artifacts Publish</h3>
                   <p>Migrate a desktop artifacts publisher to use in a Expedition Dashboard.</p>
-                  <b> Tecnologies: </b>Asp.Net; .Net; C#; Javascript; Tfs
+                  <b> Tecnologies: </b>Asp.Net; MVC5; .Net; C#; Javascript; Tfs
                 </div>
               </li>
               <li className="timeline-item">
@@ -38,7 +38,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Expedition Dashboard Upgrade</h3>
                   <p>Refactory Dashboard using SOLID concepts for new features </p>
-                  <b> Tecnologies: </b>Asp.Net; .Net; C#; Javascript; MicrosoftTests; RhynoMocks; Tfs GatedCheckIn;
+                  <b> Tecnologies: </b>Asp.Net; MVC5; .Net; C#; Javascript; MicrosoftTests; RhynoMocks; Tfs GatedCheckIn;
                 </div>
               </li>
               <li className="timeline-item">
@@ -49,7 +49,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Auto InstallerGenerate and Expedition</h3>
                   <p>Development of a module to automatically generate and publish installers according to the customer's request</p>
-                  <b> Tecnologies: </b>Asp.Net; .Net; C#; Javascript; InnoSetup; Jira Integration;
+                  <b> Tecnologies: </b>Asp.Net; MVC5; .Net; C#; Javascript; InnoSetup; Jira Integration;
                 </div>
               </li>
               <li className="timeline-item period">
@@ -67,7 +67,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Mercosul Plates</h3>
                   <p>Adapt all legacy systems to accept mercosul plates pattern.</p>
-                  <b> Tecnologies: </b>.Net; C#, Javascript, AzureDevops, git
+                  <b> Tecnologies: </b>Asp.Net; .Net; C#; Javascript; AzureDevops; git
                 </div>
               </li>
               <li className="timeline-item">
@@ -77,7 +77,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Uniface Migration</h3>
                   <p>Migrate a legacy Uniface Sytem for a .Net Web Plataform.</p>
-                  <b> Tecnologies: </b>.Net; C#, Javascript, Uniface, AzureDevops, git
+                  <b> Tecnologies: </b>.Net; MVC5; C#; Javascript; Uniface; AzureDevops; git
                 </div>
               </li>
               <li className="timeline-item">
@@ -87,7 +87,7 @@ const index = () => {
                 <div className="timeline-content">
                   <h3 className="timeline-title">Car fleet inventory System</h3>
                   <p>Development of a new system to control car fleet data.</p>
-                  <b> Tecnologies: </b>.Net; C#, Javascript, AzureDevops, git
+                  <b> Tecnologies: </b>Asp.Net; MVC5; C#; Javascript; AzureDevops; git
                 </div>
               </li>
               <li className="timeline-item period">
@@ -102,9 +102,28 @@ const index = () => {
                 </div>
                 <div className="timeline-marker" />
                 <div className="timeline-content">
-                  <h3 className="timeline-title">Engine Parts Traceability System</h3>
-                  <p>Upgrade a s.</p>
-                  <b> Tecnologies: </b>.Net; C#, Javascript, AzureDevops, git
+                  <h3 className="timeline-title">Manufactory Production Control System</h3>
+                  <p>System to control flows of Manufactory Production.</p>
+                  <b> Tecnologies: </b>.Net; C#, Windows Workflow Foundation; TCP; Tag RFID;
+                </div>
+              </li>
+              {/* <li className="timeline-item">
+                <div className="timeline-info">
+                </div>
+                <div className="timeline-marker" />
+                <div className="timeline-content">
+                  <h3 className="timeline-title"></h3>
+                  <p>System to control flows of Manufactory Production with PLC Comunication.</p>
+                  <b> Tecnologies: </b>.Net; C#, Windows Workflow Foundation; TCP; Tag RFID;
+                </div>
+              </li> */}
+              <li className="timeline-item">
+                <div className="timeline-info">
+                </div>
+                <div className="timeline-marker" />
+                <div className="timeline-content">
+                  <h3 className="timeline-title">Code Challenge<i className="fa fa-trophy yellow" /></h3>
+                  <p>7th place in Worldwide Reply CodeChallenge.</p>
                 </div>
               </li>
             </ul>

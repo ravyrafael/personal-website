@@ -27,10 +27,10 @@ const index = () => {
               </div>
               <div className="columns download">
                 <p>
-                  <a href="#" className="button"><i className="fa fa-download" />Resume</a>
+                  <a target="_blank"href="RavyRafael_2020.pdf" className="button"><i className="fa fa-download" />Resume</a>
                 </p>
                 <p>
-                  <a href="#" className="button"><i className="fa fa-download" />Json Resume</a>
+                  <a target="_blank"href="RavyRafael.Json"className="button"><i className="fa fa-download" />Json Resume</a>
                 </p>
               </div>
             </div> {/* end row */}
