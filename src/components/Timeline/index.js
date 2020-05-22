@@ -122,7 +122,7 @@ const index = () => {
                 </div>
                 <div className="timeline-marker" />
                 <div className="timeline-content">
-                  <h3 className="timeline-title">Code Challenge<i className="fa fa-trophy yellow" /></h3>
+                  <h3 className="timeline-title">Code Challenge <i className="fa fa-trophy yellow" /></h3>
                   <p>7th place in Worldwide Reply CodeChallenge.</p>
                 </div>
               </li>

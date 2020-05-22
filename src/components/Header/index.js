@@ -14,14 +14,14 @@ const index = () => {
               and learn more about me.</h3>
             <hr />
             <ul className="social">
-              <li><a target="_blank" href="https://www.linkedin.com/in/ravyrafael/"><i className="fa fa-linkedin" /></a></li>
-              <li><a target="_blank" href="https://www.github.com/ravyrafael/"><i className="fa fa-github" /></a></li>
-              <li><a target="_blank" href="skype:RavyRafael"><i className="fa fa-skype" /></a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ravyrafael/"><i className="fa fa-linkedin" /></a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/ravyrafael/"><i className="fa fa-github" /></a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="skype:RavyRafael"><i className="fa fa-skype" /></a></li>
             </ul>
           </div>
         </div>
         <p className="scrolldown">
-          <a className="smoothscroll" href="#about"><i className="icon-down-circle" /></a>
+          <a className="smoothscroll" href="#resume"><i className="icon-down-circle" /></a>
         </p>
       </header>
     )
