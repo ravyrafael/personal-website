@@ -30,7 +30,7 @@ const index = () => {
                   <a target="_blank"href="RavyRafael_2020.pdf" className="button"><i className="fa fa-download" />Resume</a>
                 </p>
                 <p>
-                  <a target="_blank"href="RavyRafael.json"className="button"><i className="fa fa-download" />Json Resume</a>
+                  <a target="_blank"href="Ravy_Rafael.json"className="button"><i className="fa fa-download" />Json Resume</a>
                 </p>
               </div>
             </div> 
