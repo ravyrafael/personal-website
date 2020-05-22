@@ -27,7 +27,7 @@ const Projects = () => {
                     <div className="columns portfolio-item">
                       <div className="item-wrap">
                         <a href={item.url} title>
-                          <img alt="" src={"images/portfolio/"+index+".jpg"} />
+                          <img alt="" src={"images/portfolio/"+(index + 1)+".jpg"} />
                           <div className="overlay">
                             <div className="portfolio-item-meta">
                               <h4>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h4>
