@@ -112,8 +112,8 @@ const index = () => {
                 </div>
                 <div className="timeline-marker" />
                 <div className="timeline-content">
-                  <h3 className="timeline-title"></h3>
-                  <p>Internal Social Network HR App.</p>
+                  <h3 className="timeline-title">Internal Social Network HR App.</h3>
+                  <p>Mobile Application used for internal company communication</p>
                   <b> Tecnologies: </b>React Native; Javacript, Angular6; Aws; GitLab  CI/CD;
                 </div>
               </li> 
