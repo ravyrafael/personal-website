@@ -6,6 +6,8 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Timeline from './components/Timeline';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   
@@ -13,11 +15,12 @@ const App = () => {
   return (
     <div>
       <Header> </Header>
-      
+      <About></About>
       <Resume></Resume>
       <Timeline></Timeline>
       <Projects></Projects>
-      <About></About>
+      <Contact></Contact>
+      <Footer></Footer>
       
     </div>
  

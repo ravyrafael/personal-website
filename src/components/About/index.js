@@ -14,23 +14,10 @@ const index = () => {
                 I seek more international experiences and discover new cultures.
             </p>
             <div className="row">
-              <div className="columns contact-details">
-                <h2>Contact Details</h2>
-                <p className="address">
-                  <span>Ravy Rafael</span><br />
-                  <span> Brazil<br />
-                    Belo Horizonte - MG
-                  </span><br />
-                  <span>+55 (31)99254-4622</span><br />
-                  <span>ravyrafael@gmail.com</span>
-                </p>
-              </div>
               <div className="columns download">
                 <p>
-                  <a target="_blank"href="RavyRafael_2020.pdf" className="button"><i className="fa fa-download" />Resume</a>
-                </p>
-                <p>
-                  <a target="_blank"href="Ravy_Rafael.json"className="button"><i className="fa fa-download" />Json Resume</a>
+                  <a target="_blank"href="RavyRafael_2020.pdf" className="button margin"><i className="fa fa-download" />Resume</a>
+                  <a target="_blank"href="Ravy_Rafael.json"className="button margin"><i className="fa fa-download" />Json Resume</a>
                 </p>
               </div>
             </div> 

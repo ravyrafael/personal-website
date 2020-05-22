@@ -47,7 +47,7 @@ const index = () => {
                 </div>
                 <div className="timeline-marker" />
                 <div className="timeline-content">
-                  <h3 className="timeline-title">Auto InstallerGenerate and Expedition</h3>
+                  <h3 className="timeline-title">Automatic Installer Generator and Publisher</h3>
                   <p>Development of a module to automatically generate and publish installers according to the customer's request</p>
                   <b> Tecnologies: </b>Asp.Net; MVC5; .Net; C#; Javascript; InnoSetup; Jira Integration;
                 </div>
@@ -107,16 +107,16 @@ const index = () => {
                   <b> Tecnologies: </b>.Net; C#, Windows Workflow Foundation; TCP; Tag RFID;
                 </div>
               </li>
-              {/* <li className="timeline-item">
+              <li className="timeline-item">
                 <div className="timeline-info">
                 </div>
                 <div className="timeline-marker" />
                 <div className="timeline-content">
                   <h3 className="timeline-title"></h3>
-                  <p>System to control flows of Manufactory Production with PLC Comunication.</p>
-                  <b> Tecnologies: </b>.Net; C#, Windows Workflow Foundation; TCP; Tag RFID;
+                  <p>Internal Social Network HR App.</p>
+                  <b> Tecnologies: </b>React Native; Javacript, Angular6; Aws; GitLab  CI/CD;
                 </div>
-              </li> */}
+              </li> 
               <li className="timeline-item">
                 <div className="timeline-info">
                 </div>

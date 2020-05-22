@@ -256,6 +256,50 @@ ul#nav li.current a { color: #ff7e22; }
    font-size: 20px;
 }
 
+#about {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#contact-me a, #about a:visited  { color: #fff; }
+#contact-me a:hover, #about a:focus { color: #11ABB0; }
+
+#contact-me h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#contact-me p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+#contact-me .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+#contact-me .contact-details { width: 41.66667%; }
+#contact-me .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#contact-me .main-col { padding-right: 5%; }
+#contact-me .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#contact-me .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#contact-me .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -696,6 +740,12 @@ ul#nav li.current a { color: #ff7e22; }
    float: left;
    color: #fff;
 }
+#call-to-action h2 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
 #call-to-action .action {
    margin-top: 12px;
 }
@@ -909,6 +959,12 @@ call-to-action .button {
    float: left;
    color: #ebeeee;
 }
+#contact h2 {
+   font: 20px/26px 'opensans-bold', sans-serif;
+   letter-spacing: 3px;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
 
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
@@ -971,8 +1027,12 @@ call-to-action .button {
 	color: #11ABB0;
 	font-size: 13px;
 }
+
+.margin{
+   margin: 10px;
+}
+
 #message-warning, #message-success {
-   display: none;
 	background: #0F0F0F;
 	padding: 24px 24px;
 	margin-bottom: 36px;
@@ -1019,9 +1079,9 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
    color: #303030;
    font-size: 14px;
+   background: #0f0f0f;
    text-align: center;
    position: relative;
 }
