@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const App = () => {
+const App = ({saveFile}) => {
   
 
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Resume></Resume>
       <Timeline></Timeline>
       <Projects></Projects>
-      <Contact></Contact>
+      <Contact saveFile={saveFile}></Contact>
       <Footer></Footer>
       
     </div>
