@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const index = () => {
     return (
         <nav id="nav-wrap">

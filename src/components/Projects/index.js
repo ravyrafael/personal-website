@@ -24,7 +24,7 @@ const Projects = () => {
           {projects.map((item, index) =>(
                     <div key={index} className="columns portfolio-item">
                       <div className="item-wrap">
-                        <a href={item.url}>
+                        <a href={item.url} target="_blank">
                           <img alt="" src={"images/portfolio/"+(index + 1)+".jpg"} />
                           <div className="overlay">
                             <div className="portfolio-item-meta">
