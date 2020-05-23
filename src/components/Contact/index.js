@@ -5,28 +5,33 @@ import { useForm } from "react-hook-form";
 const Contact = ({saveFile}) => {
   const { handleSubmit, register, errors } = useForm();
   const [warning, setWarning] = useState("")
+  const [isLoading, setLoading] = useState(false)
   const [success, setSuccess] = useState("")
   useEffect(()=>{
   },[errors])
 
 
 const onSubmit = (values, e) =>{ 
+  setLoading(true)
   try{
     api.post("/message",values).then(x=>{
       console.log(x)
       e.target.reset()
       setSuccess("Your message was sent!")
       setWarning("")
+      setLoading(false)
     }).catch(err=>{
       console.log(err)
       setSuccess("")
       setWarning("Error. Oh boy...")
+      setLoading(false)
     })
   }
   catch(err){
     console.log(err)
     setSuccess("")
     setWarning("Error. Oh boy...")
+    setLoading(false)
   }
 }
 
@@ -80,9 +85,9 @@ const onSubmit = (values, e) =>{
               </div>
               <div>
                 <button className="submit">Submit</button>
-                <span id="image-loader">
+                {isLoading && <span id="image-loader">
                   <img alt="" src="images/loader.gif" />
-                </span>
+                </span>}
               </div>
               </form>
             </fieldset>
