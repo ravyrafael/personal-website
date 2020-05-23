@@ -1004,6 +1004,9 @@ red {
    line-height: 24px;
    width: 65%;
 }
+textarea {
+   min-height: 100px;
+}
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
