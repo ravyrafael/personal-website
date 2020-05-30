@@ -81,7 +81,7 @@ const onSubmit = (values, e) =>{
               <div>
               <red> {errors.message && errors.message.message}</red>
                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                <textarea cols={50} rows={4} id="message" name="message"  ref={register({required:"Required"})} />
+                <textarea cols={50} rows={4} id="message" name="message" class="textarea-fixed" ref={register({required:"Required"})} />
               </div>
               <div>
                 <button className="submit">Submit</button>
