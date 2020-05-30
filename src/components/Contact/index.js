@@ -103,7 +103,7 @@ const onSubmit = (values, e) =>{
                 Ravy Rafael<br />
                 Brazil<br />
                 Belo Horizonte - MG<br />
-                <span>+55 (31)99254-4622</span><br />
+                <span>+55 (31) 99254-4622</span><br />
                   <span>ravyrafael@gmail.com</span>
             </p>
           </div>
