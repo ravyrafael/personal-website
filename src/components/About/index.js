@@ -16,7 +16,7 @@ const index = () => {
             <div className="row">
               <div className="columns download">
                 <p>
-                  <a target="_blank"href="RavyRafael_2020.pdf" className="button margin"><i className="fa fa-download" />Resume</a>
+                  <a target="_blank"href="Resume_Ravy_Rafael_2020.pdf" className="button margin"><i className="fa fa-download" />Resume</a>
                   <a target="_blank"href="Ravy_Rafael.json"className="button margin"><i className="fa fa-download" />Json Resume</a>
                 </p>
               </div>
