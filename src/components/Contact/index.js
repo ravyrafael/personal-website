@@ -10,8 +10,8 @@ const Contact = ({saveFile}) => {
   useEffect(()=>{
   },[errors])
 
-const share = ()=>{
-    const file = new File([], "images/portfolio/4.jpg", { type: "image/png" });
+const share1 = ()=>{
+    const file = new File([], require('../../../public/images/portfolio/1.jpg'), { type: "image/png" });
 
   // Check if files are supported
   if (navigator.canShare({files: [file]})) {
@@ -23,6 +23,22 @@ const share = ()=>{
             });
   }
 }
+
+
+const share2 = ()=>{
+  const file = new File([], "http://handson-way-backend-alb-925492143.us-east-1.elb.amazonaws.com/cards/image/52", { type: "image/png" });
+
+// Check if files are supported
+if (navigator.canShare({files: [file]})) {
+          navigator.share({
+            text: 'some_text',
+            title: 'some_title',
+            files:[file],
+            url: 'some_url'
+          });
+}
+}
+
 const onSubmit = (values, e) =>{ 
   setLoading(true)
   try{
@@ -119,7 +135,8 @@ const onSubmit = (values, e) =>{
              {success && <div id="message-success">
             <i className="fa fa-check" />{success}<br />
           </div>}
-          <button className="submit" onClick={share}>share</button>
+          <button className="submit" onClick={share1}>share1</button>
+          <button className="submit" onClick={share2}>share2</button>
         </div>
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
