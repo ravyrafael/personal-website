@@ -46,10 +46,10 @@ const share2 = ()=>{
 
       if(navigator.canShare && navigator.canShare({ files: filesArray })) {
         navigator.share({
-          text: 'some_text',
+          text: 'Girley compartilhou um ecard comigo! Saca só ',
           files: filesArray,
-          title: 'some_title',
-          url: 'some_url'
+          title: 'Recebi um ecard',
+          url: ''
         });
       }
     })
