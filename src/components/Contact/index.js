@@ -14,8 +14,28 @@ const Contact = ({saveFile}) => {
 const onSubmit = (values, e) =>{ 
   setLoading(true)
   try{
+    fetch("http://handson-way-backend-alb-925492143.us-east-1.elb.amazonaws.com/cards/image/52")
+    .then(function(response) {
+      console.log(response)
+      return response.blob()
+    })
+    .then(function(blob) {
+        const navigator = window.navigator;
+        var file = new File([blob], "picture.jpg", {type: 'image/jpeg'});
+        var filesArray = [file];
+  
+        if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+          navigator.share({
+            text: 'some_text',
+            files: filesArray,
+            title: 'some_title',
+            url: 'some_url'
+          });
+        }
+      })
+  
+
     api.post("/message",values).then(x=>{
-      console.log(x)
       e.target.reset()
       setSuccess("Your message was sent!")
       setWarning("")
