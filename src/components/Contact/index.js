@@ -11,7 +11,7 @@ const Contact = ({saveFile}) => {
   },[errors])
 
 const share1 = ()=>{
-    const file = new File([], require('../../../public/images/portfolio/1.jpg'), { type: "image/png" });
+    const file = new File([], require('../../images/portfolio/1.jpg'), { type: "image/png" });
 
   // Check if files are supported
   if (navigator.canShare({files: [file]})) {
