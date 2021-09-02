@@ -11,32 +11,48 @@ const Contact = ({saveFile}) => {
   },[errors])
 
 const share1 = ()=>{
-    const file = new File([], "https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg", { type: "image/png" });
+  fetch("https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg")
+  .then(function(response) {
+    console.log(response)
+    return response.blob()
+  })
+  .then(function(blob) {
+      const navigator = window.navigator
+      var file = new File([blob], "picture.jpg", {type: 'image/jpeg'});
+      var filesArray = [file];
 
-  // Check if files are supported
-  if (navigator.canShare({files: [file]})) {
-            navigator.share({
-              text: 'some_text',
-              title: 'some_title',
-              files:[file],
-              url: 'some_url'
-            });
-  }
+      if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+        navigator.share({
+          text: 'some_text',
+          files: filesArray,
+          title: 'some_title',
+          url: 'some_url'
+        });
+      }
+    })
 }
 
 
 const share2 = ()=>{
-  const file = new File([], "https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg", { type: "image/png" });
+  fetch("https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg")
+  .then(function(response) {
+    console.log(response)
+    return response.blob()
+  })
+  .then(function(blob) {
+      const navigator = window.navigator
+      var file = new File([blob], "picture.jpg", {type: 'image/jpeg'});
+      var filesArray = [file];
 
-// Check if files are supported
-if (navigator.canShare({files: [file]})) {
-          navigator.share({
-            text: 'some_text',
-            title: 'some_title',
-            files:[file],
-            url: 'some_url'
-          });
-}
+      if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+        navigator.share({
+          text: 'some_text',
+          files: filesArray,
+          title: 'some_title',
+          url: 'some_url'
+        });
+      }
+    })
 }
 
 const onSubmit = (values, e) =>{ 
