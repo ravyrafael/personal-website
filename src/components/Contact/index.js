@@ -50,7 +50,7 @@ const share2 = ()=>{
           files: filesArray,
           title: 'Recebi um ecard',
           url: ''
-        });
+        }).catch(ex=> console.alert(ex.message));
       }
     })
 }
