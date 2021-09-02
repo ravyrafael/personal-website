@@ -11,7 +11,7 @@ const Contact = ({saveFile}) => {
   },[errors])
 
 const share1 = ()=>{
-    const file = new File([], require('../../images/portfolio/1.jpg'), { type: "image/png" });
+    const file = new File([], "https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg", { type: "image/png" });
 
   // Check if files are supported
   if (navigator.canShare({files: [file]})) {
@@ -26,7 +26,7 @@ const share1 = ()=>{
 
 
 const share2 = ()=>{
-  const file = new File([], "http://handson-way-backend-alb-925492143.us-east-1.elb.amazonaws.com/cards/image/52", { type: "image/png" });
+  const file = new File([], "https://ravy-rafael.herokuapp.com/images/portfolio/2.jpg", { type: "image/png" });
 
 // Check if files are supported
 if (navigator.canShare({files: [file]})) {
