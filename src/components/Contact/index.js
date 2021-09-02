@@ -14,25 +14,16 @@ const Contact = ({saveFile}) => {
 const onSubmit = (values, e) =>{ 
   setLoading(true)
   try{
-    fetch("https://cdn.discordapp.com/attachments/703979888243245137/882976866900783144/unknown.png")
-    .then(function(response) {
-      console.log(response)
-      return response.blob()
-    })
-    .then(function(blob) {
-        const navigator = window.navigator;
-        var file = new File([blob], "picture.jpg", {type: 'image/jpeg'});
-        var filesArray = [file];
-  
-        if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-          navigator.share({
-            text: 'some_text',
-            files: filesArray,
-            title: 'some_title',
-            url: 'some_url'
-          });
-        }
-      })
+    const file = new File([], "images/portfolio/4.jpg", { type: "image/png" });
+
+    // Check if files are supported
+    if (navigator.canShare({files: [file]})) {
+               navigator.share({
+                text: 'some_text',
+                title: 'some_title',
+                url: 'some_url'
+              });
+    }
   
 
     api.post("/message",values).then(x=>{
