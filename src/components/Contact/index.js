@@ -14,7 +14,7 @@ const Contact = ({saveFile}) => {
 const onSubmit = (values, e) =>{ 
   setLoading(true)
   try{
-    fetch("http://handson-way-backend-alb-925492143.us-east-1.elb.amazonaws.com/cards/image/52")
+    fetch("https://cdn.discordapp.com/attachments/703979888243245137/882976866900783144/unknown.png")
     .then(function(response) {
       console.log(response)
       return response.blob()
