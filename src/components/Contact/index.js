@@ -11,22 +11,32 @@ const Contact = ({saveFile}) => {
   },[errors])
 
 const share = ()=>{
-  const file = new File([], "images/portfolio/4.jpg", { type: "image/png" });
+    const file = new File([], "images/portfolio/4.jpg", { type: "image/png" });
 
-// Check if files are supported
-if (navigator.canShare({files: [file]})) {
-           navigator.share({
-            text: 'some_text',
-            title: 'some_title',
-            files:[file],
-            url: 'some_url'
-          });
-}
+  // Check if files are supported
+  if (navigator.canShare({files: [file]})) {
+            navigator.share({
+              text: 'some_text',
+              title: 'some_title',
+              files:[file],
+              url: 'some_url'
+            });
+  }
 }
 const onSubmit = (values, e) =>{ 
   setLoading(true)
   try{
+    const file = new File([], "images/portfolio/4.jpg", { type: "image/png" });
 
+    // Check if files are supported
+    if (navigator.canShare({files: [file]})) {
+               navigator.share({
+                text: 'some_text',
+                title: 'some_title',
+                files:[file],
+                url: 'some_url'
+              });
+    }
   
 
     api.post("/message",values).then(x=>{
@@ -109,7 +119,7 @@ const onSubmit = (values, e) =>{
              {success && <div id="message-success">
             <i className="fa fa-check" />{success}<br />
           </div>}
-          <button className="submit" onclick={share}>share</button>
+          <button className="submit" onClick={share}>share</button>
         </div>
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
